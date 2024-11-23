@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Comparativo de Carros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 text-center" style="max-width: 800px;">
+    
+    <div class="d-flex align-items-center justify-content-center mb-3">
+        <img src="/images/icon-ecoenergy-removebg-preview.svg" alt="Imagem representativa" style="height: 60px; margin-right: 15px;">
+        <h1 class="display-5 fw-bold" style="color: #2e2e2e;">Comparativo de Custos</h1>
+    </div>
+    <p class="lead mb-5" style="color: #2e2e2e;">Descubra as vantagens e diferenças de custo entre carros elétricos e carros a combustão.</p>
+
+    <table class="table table-bordered text-center" style="background-color: #f9f9f9; color: #2e2e2e;">
+        <thead>
+            <tr style="height: 100px; vertical-align: middle; font-size: 1.2rem; font-weight: bold;">
+                <th>Imagem</th>
+                <th>Modelo</th>
+                <th>Tipo</th>
+                <th>Preço Médio (R$)</th>
+                <th>Custo Médio por Km (R$)</th>
+                <th>Custo de Manutenção Anual (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 150px; vertical-align: middle;">
+                <td><img src="/images/tesla-model-3-final-8.jpg" alt="Tesla Model 3" style="width: 250px;"></td>
+                <td>Tesla Model 3</td>
+                <td>Elétrico</td>
+                <td>500.000</td>
+                <td>0,07</td>
+                <td>1.000</td>
+            </tr>
+            <tr style="height: 150px; vertical-align: middle;">
+                <td><img src="/images/Onix-Activ-2017-1.jpg" alt="Chevrolet Onix" style="width: 250px;"></td>
+                <td>Chevrolet Onix</td>
+                <td>Combustão</td>
+                <td>90.770</td>
+                <td>0,40</td>
+                <td>2.500</td>
+            </tr>
+            <tr style="height: 150px; vertical-align: middle;">
+                <td><img src="/images/renault-zoe.jpg" alt="Renault Zoe" style="width: 250px;"></td>
+                <td>Renault Zoe</td>
+                <td>Elétrico</td>
+                <td>204.990</td>
+                <td>0,10</td>
+                <td>1.200</td>
+            </tr>
+            <tr style="height: 150px; vertical-align: middle;">
+                <td><img src="/images/ford-ka-freestyle-1-0.jpg" alt="Ford Ka" style="width: 250px;"></td>
+                <td>Ford Ka</td>
+                <td>Combustão</td>
+                <td>70.000</td>
+                <td>0,38</td>
+                <td>2.200</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="mt-4" style="color: #2e2e2e;">
+        Os carros elétricos apresentam custos de operação significativamente menores em comparação aos veículos a combustão, tanto no custo por quilômetro quanto na manutenção anual. Invista em mobilidade sustentável!
+    </p>
+</div>

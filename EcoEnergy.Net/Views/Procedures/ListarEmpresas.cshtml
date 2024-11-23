@@ -1,0 +1,45 @@
+﻿@model List<EcoEnergy.Models.Empresa>
+
+@{
+    ViewData["Title"] = "Listar Empresas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 90%;">
+    <h1 class="text-center display-5 fw-bold mb-4" style="color: #2e2e2e;">Empresas Cadastradas</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <table class="table table-hover table-bordered" style="background-color: #f9f9f9;">
+        <thead class="table-dark">
+            <tr style="font-size: 1.2rem;">
+                <th>ID</th>
+                <th>CNPJ</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Especialidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var empresa in Model)
+            {
+                <tr class="table-light">
+                    <td>@empresa.IdEmpresa</td>
+                    <td>@empresa.NrCnpj</td>
+                    <td>@empresa.NmEmpresa</td>
+                    <td>@empresa.NrTelefone</td>
+                    <td>@empresa.DsEspecialidade</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("EmpresaView", "Procedures")" class="btn px-5 py-2" style="background-color: #2e2e2e; color: white; font-size: 1.2rem;">Voltar</a>
+    </div>
+</div>

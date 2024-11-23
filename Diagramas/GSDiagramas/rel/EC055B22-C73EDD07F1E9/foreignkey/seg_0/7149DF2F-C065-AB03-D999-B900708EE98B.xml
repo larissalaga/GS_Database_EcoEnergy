@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7149DF2F-C065-AB03-D999-B900708EE98B" containerWithKeyObject="E4180459-4484-BB68-CED1-26BC7DFAE622" localFKIndex="CA1756EB-8694-075C-F4D1-B97B2AD0B58B" name="T_GS24_SIMULACAO_T_GS24_ENDERECO_FK">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>63BD7833-1C78-8455-FAED-666085755C12</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<referredTableLongName>T_GS24_ENDERECO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9D888ECF-9EB3-55CC-244C-3F80DDC88F7B</referredTableID>
+<keyObject>FF4C8601-12A1-3622-6E7C-DC29757A91B0</keyObject>
+<referredKeyID>FF4C8601-12A1-3622-6E7C-DC29757A91B0</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_endereco</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

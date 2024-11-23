@@ -1,0 +1,59 @@
+﻿@model List<EcoEnergy.Models.Simulacao>
+
+@{
+    ViewData["Title"] = "Listar Simulações";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 90%;">
+    <h1 class="text-center display-5 fw-bold mb-4" style="color: #2e2e2e;">Simulações Cadastradas</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <table class="table table-hover table-bordered" style="background-color: #f9f9f9;">
+        <thead class="table-dark">
+            <tr style="font-size: 1.2rem;">
+                <th>ID</th>
+                <th>Custo Estimado (R$)</th>
+                <th>Economia (R$)</th>
+                <th>Data da Simulação</th>
+                <th>Consumo Mensal (kWh)</th>
+                <th>Área da Placa (m²)</th>
+                <th>Potência Estimada (kW)</th>
+                <th>Produção Mensal (kWh)</th>
+                <th>Retorno do Investimento (meses)</th>
+                <th>Orçamento Solicitado</th>
+                <th>Usuário</th>
+                <th>CEP do Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var simulacao in Model)
+            {
+                <tr class="table-light">
+                    <td>@simulacao.IdSimulacao</td>
+                    <td>@simulacao.NrCustoEstimado.ToString("N2")</td>
+                    <td>@simulacao.NrEconomia.ToString("N2")</td>
+                    <td>@simulacao.DtSimulacao.ToShortDateString()</td>
+                    <td>@simulacao.NrConsumoMensal.ToString("N2")</td>
+                    <td>@simulacao.NrAreaPlaca.ToString("N2")</td>
+                    <td>@simulacao.NrPotenciaEstimada.ToString("N2")</td>
+                    <td>@simulacao.NrProducaoMensal.ToString("N2")</td>
+                    <td>@simulacao.NrTempoRetornoInvestimento.ToString("N2")</td>
+                    <td>@(simulacao.DsOrcamentoSolicitado == 1 ? "Sim" : "Não")</td>
+                    <td>@(simulacao.Usuario != null ? simulacao.Usuario.NmUsuario : "N/A")</td>
+                    <td>@(simulacao.Endereco != null ? simulacao.Endereco.DsCep : "N/A")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("SimulacaoView", "Procedures")" class="btn px-5 py-2" style="background-color: #2e2e2e; color: white; font-size: 1.2rem;">Voltar</a>
+    </div>
+</div>

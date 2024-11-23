@@ -1,0 +1,394 @@
+{
+  "simulacoes": [
+    {
+      "id_simulacao": 6,
+      "custo_estimado": 29000.00,
+      "economia": 1050.00,
+      "data_simulacao": "02/10/24",
+      "consumo_mensal": 600.00,
+      "area_placa": 80.00,
+      "potencia_estimada": 8.00,
+      "producao_mensal": 900.00,
+      "tempo_retorno_investimento": 2.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 11,
+          "valor_proposto": 20000.00,
+          "prazo": "28 dias",
+          "data_orcamento": "03/10/24",
+          "servicos": "Instalação residencial"
+        },
+        {
+          "id_orcamento": 12,
+          "valor_proposto": 20500.00,
+          "prazo": "32 dias",
+          "data_orcamento": "01/10/24",
+          "servicos": "Instalação comercial"
+        }
+      ],
+      "orcamento_mais_caro": 20500.00,
+      "orcamento_mais_barato": 20000.00,
+      "orcamento_medio": 20250.00,
+      "endereco": {
+        "cep": "40301350",
+        "logradouro": "Rua Direta da Piedade",
+        "numero": 600,
+        "bairro": "Piedade",
+        "cidade": "Salvador",
+        "estado": "BA",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 1,
+      "custo_estimado": 20000.00,
+      "economia": 700.00,
+      "data_simulacao": "18/09/24",
+      "consumo_mensal": 400.00,
+      "area_placa": 60.00,
+      "potencia_estimada": 6.00,
+      "producao_mensal": 700.00,
+      "tempo_retorno_investimento": 5.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 1,
+          "valor_proposto": 15000.00,
+          "prazo": "30 dias",
+          "data_orcamento": "21/09/24",
+          "servicos": "Instalação completa"
+        },
+        {
+          "id_orcamento": 2,
+          "valor_proposto": 15500.00,
+          "prazo": "45 dias",
+          "data_orcamento": "23/09/24",
+          "servicos": "Instalação e suporte"
+        }
+      ],
+      "orcamento_mais_caro": 15500.00,
+      "orcamento_mais_barato": 15000.00,
+      "orcamento_medio": 15250.00,
+      "endereco": {
+        "cep": "04534011",
+        "logradouro": "Rua Funchal",
+        "numero": 100,
+        "bairro": "Vila Olímpia",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 7,
+      "custo_estimado": 21000.00,
+      "economia": 750.00,
+      "data_simulacao": "20/09/24",
+      "consumo_mensal": 420.00,
+      "area_placa": 62.00,
+      "potencia_estimada": 6.20,
+      "producao_mensal": 720.00,
+      "tempo_retorno_investimento": 4.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 13,
+          "valor_proposto": 21000.00,
+          "prazo": "26 dias",
+          "data_orcamento": "06/10/24",
+          "servicos": "Sistema avançado"
+        },
+        {
+          "id_orcamento": 14,
+          "valor_proposto": 21500.00,
+          "prazo": "29 dias",
+          "data_orcamento": "04/10/24",
+          "servicos": "Sistema básico"
+        }
+      ],
+      "orcamento_mais_caro": 21500.00,
+      "orcamento_mais_barato": 21000.00,
+      "orcamento_medio": 21250.00,
+      "endereco": {
+        "cep": "60130160",
+        "logradouro": "Rua Padre Valdevino",
+        "numero": 700,
+        "bairro": "Aldeota",
+        "cidade": "Fortaleza",
+        "estado": "CE",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 2,
+      "custo_estimado": 25000.00,
+      "economia": 920.00,
+      "data_simulacao": "22/09/24",
+      "consumo_mensal": 520.00,
+      "area_placa": 72.00,
+      "potencia_estimada": 7.20,
+      "producao_mensal": 820.00,
+      "tempo_retorno_investimento": 3.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 3,
+          "valor_proposto": 16000.00,
+          "prazo": "30 dias",
+          "data_orcamento": "28/09/24",
+          "servicos": "Instalação básica"
+        },
+        {
+          "id_orcamento": 4,
+          "valor_proposto": 16500.00,
+          "prazo": "40 dias",
+          "data_orcamento": "29/09/24",
+          "servicos": "Instalação e manutenção"
+        }
+      ],
+      "orcamento_mais_caro": 16500.00,
+      "orcamento_mais_barato": 16000.00,
+      "orcamento_medio": 16250.00,
+      "endereco": {
+        "cep": "04089000",
+        "logradouro": "Avenida Santo Amaro",
+        "numero": 200,
+        "bairro": "Brooklin",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 8,
+      "custo_estimado": 22000.00,
+      "economia": 800.00,
+      "data_simulacao": "23/09/24",
+      "consumo_mensal": 450.00,
+      "area_placa": 65.00,
+      "potencia_estimada": 6.50,
+      "producao_mensal": 750.00,
+      "tempo_retorno_investimento": 4.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 15,
+          "valor_proposto": 22000.00,
+          "prazo": "33 dias",
+          "data_orcamento": "01/10/24",
+          "servicos": "Consultoria solar"
+        },
+        {
+          "id_orcamento": 16,
+          "valor_proposto": 22500.00,
+          "prazo": "40 dias",
+          "data_orcamento": "01/10/24",
+          "servicos": "Suporte e manutenção"
+        }
+      ],
+      "orcamento_mais_caro": 22500.00,
+      "orcamento_mais_barato": 22000.00,
+      "orcamento_medio": 22250.00,
+      "endereco": {
+        "cep": "60140110",
+        "logradouro": "Avenida Dom Luís",
+        "numero": 800,
+        "bairro": "Meireles",
+        "cidade": "Fortaleza",
+        "estado": "CE",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 4,
+      "custo_estimado": 27000.00,
+      "economia": 980.00,
+      "data_simulacao": "28/09/24",
+      "consumo_mensal": 560.00,
+      "area_placa": 76.00,
+      "potencia_estimada": 7.60,
+      "producao_mensal": 860.00,
+      "tempo_retorno_investimento": 2.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 7,
+          "valor_proposto": 18000.00,
+          "prazo": "35 dias",
+          "data_orcamento": "29/09/24",
+          "servicos": "Instalação e consultoria"
+        },
+        {
+          "id_orcamento": 8,
+          "valor_proposto": 18500.00,
+          "prazo": "45 dias",
+          "data_orcamento": "30/09/24",
+          "servicos": "Consultoria adicional"
+        }
+      ],
+      "orcamento_mais_caro": 18500.00,
+      "orcamento_mais_barato": 18000.00,
+      "orcamento_medio": 18250.00,
+      "endereco": {
+        "cep": "30130180",
+        "logradouro": "Rua dos Timbiras",
+        "numero": 400,
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 5,
+      "custo_estimado": 28000.00,
+      "economia": 1000.00,
+      "data_simulacao": "30/09/24",
+      "consumo_mensal": 580.00,
+      "area_placa": 78.00,
+      "potencia_estimada": 7.80,
+      "producao_mensal": 880.00,
+      "tempo_retorno_investimento": 2.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 9,
+          "valor_proposto": 19000.00,
+          "prazo": "20 dias",
+          "data_orcamento": "03/10/24",
+          "servicos": "Pacote completo"
+        },
+        {
+          "id_orcamento": 10,
+          "valor_proposto": 19500.00,
+          "prazo": "30 dias",
+          "data_orcamento": "05/10/24",
+          "servicos": "Pacote básico"
+        }
+      ],
+      "orcamento_mais_caro": 19500.00,
+      "orcamento_mais_barato": 19000.00,
+      "orcamento_medio": 19250.00,
+      "endereco": {
+        "cep": "40010000",
+        "logradouro": "Avenida Sete de Setembro",
+        "numero": 500,
+        "bairro": "Centro",
+        "cidade": "Salvador",
+        "estado": "BA",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 10,
+      "custo_estimado": 24000.00,
+      "economia": 900.00,
+      "data_simulacao": "29/09/24",
+      "consumo_mensal": 500.00,
+      "area_placa": 70.00,
+      "potencia_estimada": 7.00,
+      "producao_mensal": 800.00,
+      "tempo_retorno_investimento": 3.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 19,
+          "valor_proposto": 24000.00,
+          "prazo": "45 dias",
+          "data_orcamento": "11/10/24",
+          "servicos": "Instalação de painel"
+        },
+        {
+          "id_orcamento": 20,
+          "valor_proposto": 24500.00,
+          "prazo": "50 dias",
+          "data_orcamento": "01/10/24",
+          "servicos": "Instalação e suporte"
+        }
+      ],
+      "orcamento_mais_caro": 24500.00,
+      "orcamento_mais_barato": 24000.00,
+      "orcamento_medio": 24250.00,
+      "endereco": {
+        "cep": "70350700",
+        "logradouro": "SQS 308 Bloco G",
+        "numero": 1000,
+        "bairro": "Asa Sul",
+        "cidade": "Brasília",
+        "estado": "DF",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 3,
+      "custo_estimado": 26000.00,
+      "economia": 950.00,
+      "data_simulacao": "25/09/24",
+      "consumo_mensal": 540.00,
+      "area_placa": 74.00,
+      "potencia_estimada": 7.40,
+      "producao_mensal": 840.00,
+      "tempo_retorno_investimento": 3.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 5,
+          "valor_proposto": 17000.00,
+          "prazo": "25 dias",
+          "data_orcamento": "25/09/24",
+          "servicos": "Sistema completo"
+        },
+        {
+          "id_orcamento": 6,
+          "valor_proposto": 17500.00,
+          "prazo": "50 dias",
+          "data_orcamento": "26/09/24",
+          "servicos": "Manutenção e suporte"
+        }
+      ],
+      "orcamento_mais_caro": 17500.00,
+      "orcamento_mais_barato": 17000.00,
+      "orcamento_medio": 17250.00,
+      "endereco": {
+        "cep": "30110060",
+        "logradouro": "Rua da Bahia",
+        "numero": 300,
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "id_simulacao": 9,
+      "custo_estimado": 23000.00,
+      "economia": 850.00,
+      "data_simulacao": "26/09/24",
+      "consumo_mensal": 470.00,
+      "area_placa": 67.00,
+      "potencia_estimada": 6.70,
+      "producao_mensal": 770.00,
+      "tempo_retorno_investimento": 3.00,
+      "orcamentos": [
+        {
+          "id_orcamento": 17,
+          "valor_proposto": 23000.00,
+          "prazo": "25 dias",
+          "data_orcamento": "28/09/24",
+          "servicos": "Serviço completo"
+        },
+        {
+          "id_orcamento": 18,
+          "valor_proposto": 23500.00,
+          "prazo": "35 dias",
+          "data_orcamento": "29/09/24",
+          "servicos": "Serviço parcial"
+        }
+      ],
+      "orcamento_mais_caro": 23500.00,
+      "orcamento_mais_barato": 23000.00,
+      "orcamento_medio": 23250.00,
+      "endereco": {
+        "cep": "71615060",
+        "logradouro": "Avenida das Araucárias",
+        "numero": 900,
+        "bairro": "Águas Claras",
+        "cidade": "Brasília",
+        "estado": "DF",
+        "pais": "Brasil"
+      }
+    }
+  ]
+}

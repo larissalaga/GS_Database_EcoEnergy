@@ -1,0 +1,81 @@
+﻿@model WebApplicationOdontoPrev.ViewModels.ConsumoViewModel
+@{
+    ViewData["Title"] = "Consumo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 text-center" style="max-width: 800px;">
+    <div class="d-flex align-items-center justify-content-center mb-3">
+        <img src="/images/icon-ecoenergy-removebg-preview.svg" alt="Imagem representativa" style="height: 60px; margin-right: 15px;">
+        <h1 class="display-5 fw-bold mb-3" style="color: #2e2e2e; font-size: 2.5rem;">Estimativa de Consumo</h1>
+    </div>
+    <p class="lead mb-5" style="color: #2e2e2e; font-size: 1.5rem;">Digite quantos equipamentos você possui em casa para calcular a estimativa do seu consumo mensal.</p>
+
+    @if (Model.ConsumoTotal > 0)
+    {
+        <div class="mt-4 border rounded p-4" style="color: #2e2e2e; font-size: 1.5rem; border-color: #2e2e2e;">
+            <h3>Consumo Total Estimado:</h3>
+            <p>@Model.ConsumoTotal kWh/mês</p>
+            <h3>Custo Total Estimado:</h3>
+            <p>R$ @Model.CustoTotal.ToString("F2") (considerando uma média de R$ @Model.CustoKWh.ToString("F2")/kWh)</p>
+        </div>
+    }
+
+    <form method="post" asp-action="Index" style="min-width: 400px;">
+        <div class="d-flex flex-column justify-content-between">
+            <div class="mb-4" style="font-size: 1.2rem;">
+                <label asp-for="CustoKWh" class="form-label">Custo Médio do kWh:</label>
+                <div class="input-group" style="width: 150px; margin: 0 auto;">
+                    <span class="input-group-text">R$</span>
+                    <input type="number" asp-for="CustoKWh" id="custoKWhInput" class="form-control" step="0.01" min="0.01" />
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between mb-4" style="font-size: 1.2rem; gap: 20px;">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="/images/icons8-geladeira-50.png" alt="Geladeira" class="img-fluid" style="max-height: 80px;">
+                    <label asp-for="QuantidadeGeladeira" class="form-label">Geladeira</label>
+                </div>
+                <input type="number" asp-for="QuantidadeGeladeira" class="form-control" style="width: 80px;" min="0" />
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-4" style="font-size: 1.2rem; gap: 20px;">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="/images/icons8-tv-50.png" alt="Televisão" class="img-fluid" style="max-height: 80px;">
+                    <label asp-for="QuantidadeTelevisao" class="form-label">Televisão</label>
+                </div>
+                <input type="number" asp-for="QuantidadeTelevisao" class="form-control" style="width: 80px;" min="0" />
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-4" style="font-size: 1.2rem; gap: 20px;">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="/images/icons8-microondas-50.png" alt="Microondas" class="img-fluid" style="max-height: 80px;">
+                    <label asp-for="QuantidadeMicroondas" class="form-label">Microondas</label>
+                </div>
+                <input type="number" asp-for="QuantidadeMicroondas" class="form-control" style="width: 80px;" min="0" />
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-4" style="font-size: 1.2rem; gap: 20px;">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="/images/icons8-ar-condicionado.png" alt="Ar-Condicionado" class="img-fluid" style="max-height: 80px;">
+                    <label asp-for="QuantidadeArCondicionado" class="form-label">Ar-Condicionado</label>
+                </div>
+                <input type="number" asp-for="QuantidadeArCondicionado" class="form-control" style="width: 80px;" min="0" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary px-5 py-3" style="font-size: 1.2rem;">Calcular Consumo</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var custoKWhInput = document.getElementById("custoKWhInput");
+        if (custoKWhInput && custoKWhInput.value) {
+            custoKWhInput.value = parseFloat(custoKWhInput.value).toFixed(2);
+        }
+
+        custoKWhInput.addEventListener("blur", function() {
+            if (custoKWhInput.value) {
+                custoKWhInput.value = parseFloat(custoKWhInput.value).toFixed(2);
+            }
+        });
+    });
+</script>

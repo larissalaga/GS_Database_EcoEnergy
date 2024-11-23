@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0A81B380-0475-7866-64B8-8B3FEA7ABCCF" containerWithKeyObject="9D888ECF-9EB3-55CC-244C-3F80DDC88F7B" localFKIndex="B327A4C4-C1A1-2E6E-40C7-C696B12EB1AA" name="T_GS24_ENDERECO_T_GS24_EMPRESA_FK">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>7F344F67-60CE-EDD0-24D7-A2A8073EF969</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<referredTableLongName>T_GS24_EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D4F60C3E-A1AF-2D73-21AE-AE4034F483A8</referredTableID>
+<keyObject>F7BA58B0-E085-53DB-EBA6-0321E694AC7E</keyObject>
+<referredKeyID>F7BA58B0-E085-53DB-EBA6-0321E694AC7E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

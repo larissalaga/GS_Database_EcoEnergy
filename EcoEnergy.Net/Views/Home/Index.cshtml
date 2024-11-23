@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="container mt-5 text-center">
+
+    <img src="/images/icon-ecoenergy-removebg-preview.svg" alt="Imagem representativa" class="img-fluid mb-4" style="max-height: 300px;">
+
+    <h1 class="display-3" style="line-height: 1;">
+        <span style="color: green; font-weight: bold;">ECO</span><span style="color: #2e2e2e; font-weight: bold;">ENERGY</span>
+    </h1>
+
+    <div class="mt-5">
+        <button type="button" class="btn btn-primary btn-lg rounded-pill px-5 py-3" onclick="location.href='@Url.Action("Index", "Login")'">
+            Fazer Login
+        </button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Menu Inicial";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container d-flex flex-column align-items-center justify-content-start text-center">
+    <div>
+        <img src="/images/icon-ecoenergy-removebg-preview.svg" alt="Imagem representativa" class="img-fluid" style="max-height: 300px; margin-bottom: 5px;">
+
+        <h1 class="display-3 mb-4" style="line-height: 1;">
+            <span style="color: green; font-weight: bold;">ECO</span><span style="color: #2e2e2e; font-weight: bold;">ENERGY</span>
+        </h1>
+    </div>
+
+    <div class="d-flex flex-column align-items-center gap-5 mt-4">
+        <button type="button" class="btn d-flex align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none;" onclick="location.href='/ComparativoCarros'">
+            <img src="/images/icon-carro-eletrico.svg" alt="Ícone 1" style="height: 40px; margin-right: 15px;">
+            <span>Custo carro elétrico x Custo carro a gasolina</span>
+        </button>
+        <button type="button" class="btn d-flex align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none;" onclick="location.href='/Consumo'">
+            <img src="/images/icon-energia.svg" alt="Ícone 2" style="height: 40px; margin-right: 15px;">
+            <span>Consumo mensal</span>
+        </button>
+        <button type="button" class="btn d-flex align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none;" onclick="location.href='/Simulacao'">
+            <img src="/images/icon-energia-solar.svg" alt="Ícone 3" style="height: 40px; margin-right: 15px;">
+            <span>Simulação de custo para conversão da sua energia para solar</span>
+        </button>
+        <button type="button" class="btn d-flex align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none;" onclick="location.href='/Artigos'">
+            <img src="/images/icon-lampada.svg" alt="Ícone 4" style="height: 40px; margin-right: 15px;">
+            <span>Saiba mais sobre energia limpa</span>
+        </button>
+    </div>
+</div>

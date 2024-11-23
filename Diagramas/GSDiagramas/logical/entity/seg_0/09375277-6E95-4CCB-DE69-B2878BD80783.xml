@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09375277-6E95-4CCB-DE69-B2878BD80783" name="T_GS24_ENDERECO">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:31:55 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_endereco" id="B96F56F9-5664-C498-5F04-16EC37D591D8">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:32:09 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,,20</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_cep" id="DA2A7097-7158-47C0-40D6-DD3388C88BE7">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 02:12:27 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_logradouro" id="C31A06B8-BED0-91F9-69F8-7821E25277AF">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:32:56 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_logradouro" id="B6783E24-0AB2-D2D6-B92C-B9A456C067A3">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:33:20 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_bairro" id="FC0D7404-9CC0-3C6C-45C4-BF023CD3D085">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:34:06 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_cidade" id="0A8E7FC6-FC0E-7225-E344-4935150E6D48">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:34:26 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_estado" id="37F83276-A8A7-0441-5F08-3327B64E20DB">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:34:46 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_pais" id="77B2CC47-CA99-1343-226B-0A43282D1765">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:35:07 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="B637F21A-2E2B-21C4-5C73-2BEEAF8E2283">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 03:28:26 UTC</createdTime>
+<generatorID>F345928D-BF7E-7767-C9B0-44D5BFD01239</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>43E1018F-68F1-4BA5-F0CE-7F20BA22A054</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_empresa" id="9CFC8B3B-D5F8-5D13-8D2F-B5CB6F54FB23">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 03:29:25 UTC</createdTime>
+<generatorID>7F344F67-60CE-EDD0-24D7-A2A8073EF969</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>511635E8-DDF3-F7AF-2FFB-DBCEFF8AA048</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CB22637B-7F8D-F5D6-B70D-BC46C40A72F6" name="T_GS24_ENDERECO PK">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-19 00:32:53 UTC</createdTime>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EC055B22-F636-01A1-3DC3-C73EDD07F1E9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B96F56F9-5664-C498-5F04-16EC37D591D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

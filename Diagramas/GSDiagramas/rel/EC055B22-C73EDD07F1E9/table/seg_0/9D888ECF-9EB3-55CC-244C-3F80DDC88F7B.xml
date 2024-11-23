@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D888ECF-9EB3-55CC-244C-3F80DDC88F7B" name="T_GS24_ENDERECO">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>09375277-6E95-4CCB-DE69-B2878BD80783</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_endereco" id="AAA21084-AE29-E73C-E41B-9E001BA88316">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>B96F56F9-5664-C498-5F04-16EC37D591D8</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,,20</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cep" id="2E7891A6-15A1-A787-A91E-6AD0C2B32F82">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>DA2A7097-7158-47C0-40D6-DD3388C88BE7</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_logradouro" id="117BF85D-C262-03D5-73E9-01326909B1CE">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>C31A06B8-BED0-91F9-69F8-7821E25277AF</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_logradouro" id="8EC78775-0CAA-A09C-2B32-04BB2BD740F1">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>B6783E24-0AB2-D2D6-B92C-B9A456C067A3</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_bairro" id="A5238507-36DB-CB1D-0DC3-4CE36D1FB895">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>FC0D7404-9CC0-3C6C-45C4-BF023CD3D085</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cidade" id="39AFDCAB-9156-BEF1-B5B6-0198D3875262">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>0A8E7FC6-FC0E-7225-E344-4935150E6D48</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_estado" id="13864F57-361A-8B3D-F09F-2BAB0C2D84B6">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>37F83276-A8A7-0441-5F08-3327B64E20DB</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_pais" id="77D53462-0C80-D84A-A5C5-9A970E017D1E">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>77B2CC47-CA99-1343-226B-0A43282D1765</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="19963F5E-B5C9-35F3-EF7A-2E25D89C6DC9">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>B637F21A-2E2B-21C4-5C73-2BEEAF8E2283</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42827A3C-3138-DA65-754E-5D7DD9BCE3E0" referredColumn="EF4DD844-0098-EB4C-FA1B-82EEDB115BD5"/>
+</associations>
+</Column>
+<Column name="id_empresa" id="92B63D92-34CF-019E-69B1-E8E224A54800">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>9CFC8B3B-D5F8-5D13-8D2F-B5CB6F54FB23</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A81B380-0475-7866-64B8-8B3FEA7ABCCF" referredColumn="4FE8A86B-53CF-0B3E-EA8A-5830CB64D01D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF4C8601-12A1-3622-6E7C-DC29757A91B0" name="T_GS24_ENDERECO_PK">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>CB22637B-7F8D-F5D6-B70D-BC46C40A72F6</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAA21084-AE29-E73C-E41B-9E001BA88316"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B327A4C4-C1A1-2E6E-40C7-C696B12EB1AA" name="T_GS24_ENDERECO_T_GS24_EMPRESA_FK">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>7F344F67-60CE-EDD0-24D7-A2A8073EF969</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92B63D92-34CF-019E-69B1-E8E224A54800"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8B63EBD-0403-9CE1-2B53-0F15F6C94485" name="T_GS24_ENDERECO_T_GS24_USUARIO_FK">
+<createdBy>laris</createdBy>
+<createdTime>2024-11-21 06:40:19 UTC</createdTime>
+<generatorID>F345928D-BF7E-7767-C9B0-44D5BFD01239</generatorID>
+<ownerDesignName>GSDiagramas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19963F5E-B5C9-35F3-EF7A-2E25D89C6DC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

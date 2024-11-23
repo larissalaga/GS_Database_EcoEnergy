@@ -1,0 +1,47 @@
+﻿@model List<EcoEnergy.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Listar Usuários";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 90%;">
+    <h1 class="text-center display-5 fw-bold mb-4" style="color: #2e2e2e;">Usuários Cadastrados</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <table class="table table-hover table-bordered" style="background-color: #f9f9f9;">
+        <thead class="table-dark">
+            <tr style="font-size: 1.2rem;">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>CPF</th>
+                <th>Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in Model)
+            {
+                <tr class="table-light">
+                    <td>@usuario.IdUsuario</td>
+                    <td>@usuario.NmUsuario</td>
+                    <td>@usuario.DsEmail</td>
+                    <td>@usuario.NrTelefone</td>
+                    <td>@usuario.NrCpf</td>
+                    <td>@(usuario.Empresa != null ? usuario.Empresa.NmEmpresa : "N/A")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("UsuarioView", "Procedures")" class="btn px-5 py-2" style="background-color: #2e2e2e; color: white; font-size: 1.2rem;">Voltar</a>
+    </div>
+</div>

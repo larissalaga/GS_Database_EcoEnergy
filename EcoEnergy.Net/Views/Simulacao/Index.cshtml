@@ -1,0 +1,81 @@
+﻿@model WebApplicationOdontoPrev.ViewModels.SimulacaoViewModel
+@{
+    ViewData["Title"] = "Simulação";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 text-center" style="max-width: 800px;">
+    <div class="d-flex align-items-center justify-content-center mb-3">
+        <img src="/images/icon-ecoenergy-removebg-preview.svg" alt="Imagem representativa" style="height: 60px; margin-right: 15px;">
+        <h1 class="display-5 fw-bold mb-3" style="color: #2e2e2e; font-size: 2.5rem;">Simulação de Custos</h1>
+    </div>
+    <p class="lead mb-5" style="color: #2e2e2e; font-size: 1.5rem;">Faça agora a simulação para entender os custos e benefícios de converter sua energia para solar.</p>
+
+    @if (Model.NrCustoEstimado > 0)
+    {
+        <div id="resultado" class="mt-4 border rounded p-4" style="color: #2e2e2e; font-size: 1.5rem; border-color: #2e2e2e;">
+            <h3>Resultado da Simulação:</h3>
+            <p><strong>Potência Estimada Necessária:</strong> @Model.NrPotenciaEstimada.ToString("F2") kW</p>
+            <p><strong>Área Necessária para as Placas:</strong> @Model.NrAreaPlaca.ToString("F2") m²</p>
+            <p><strong>Produção Mensal Estimada:</strong> @Model.NrProducaoMensal.ToString("F2") kWh</p>
+            <p><strong>Custo Estimado:</strong> R$ @Model.NrCustoEstimado.ToString("N2")</p>
+            <p><strong>Tempo de Retorno do Investimento:</strong> @Model.NrTempoRetornoInvestimento.ToString("F2") meses</p>
+            <p><strong>Economia Mensal Estimada:</strong> R$ @Model.NrEconomia.ToString("N2")</p>
+            <p><strong>Data da Simulação:</strong> @Model.DtSimulacao.ToShortDateString()</p>
+        </div>
+
+        @if (Model.DsOrcamentoSolicitado == 0)
+        {
+            <div class="text-center mt-4  mb-2">
+                <form method="post" asp-action="SolicitarOrcamento">
+                    <input type="hidden" name="NrPotenciaEstimada" value="@Model.NrPotenciaEstimada" />
+                    <input type="hidden" name="NrAreaPlaca" value="@Model.NrAreaPlaca" />
+                    <input type="hidden" name="NrProducaoMensal" value="@Model.NrProducaoMensal" />
+                    <input type="hidden" name="NrCustoEstimado" value="@Model.NrCustoEstimado" />
+                    <input type="hidden" name="NrTempoRetornoInvestimento" value="@Model.NrTempoRetornoInvestimento" />
+                    <input type="hidden" name="NrEconomia" value="@Model.NrEconomia" />
+                    <input type="hidden" name="DtSimulacao" value="@Model.DtSimulacao.ToShortDateString()" />
+                    <input type="hidden" name="CustoKWh" value="@Model.CustoKWh" />
+                    <input type="hidden" name="NrConsumoMensal" value="@Model.NrConsumoMensal" />
+                    <button type="submit" class="btn btn-success px-5 py-3" style="font-size: 1.2rem;">Solicitar Orçamento</button>
+                </form>                
+            </div>
+        }
+        else
+
+        {
+            <div class="text-center mt-4 mb-2">                
+                <button type="submit" class="btn btn-info px-5 py-3 disabled" style="font-size: 1.2rem;">Orçamento Solicitado</button>                
+            </div>
+        }
+        <div class="text-center mt-2 mb-5">
+            <a href="@Url.Action("Index", "Simulacao")" class="btn btn-warning px-5 py-3" style="font-size: 1.2rem;">Nova Simulação</a>
+        </div>
+    } 
+    else
+    {
+        <div class="mb-5" style="font-size: 1.2rem;">
+            <label for="CustoKWh" class="form-label" style="color: #2e2e2e; font-weight: bold;">Custo Médio do kWh:</label>
+            <div class="input-group" style="width: 150px; margin: 0 auto;">
+                <span class="input-group-text">R$</span>
+                <input type="number" asp-for="CustoKWh" id="CustoKWh" class="form-control" step="0.01" min="0.01" value="0.70" />
+            </div>
+        </div>
+
+        <div class="mx-auto" style="max-width: 100%;">
+            <form method="post" asp-action="MostraSimulacao" style="min-width: 400px;">
+                <div class="mb-5" style="font-size: 1.2rem;">
+                    <label for="NrConsumoMensal" class="form-label" style="color: #2e2e2e; font-weight: bold;">
+                        Qual é o seu consumo mensal em kWh?
+                    </label>
+                    <p style="color: #2e2e2e;">Verifique este valor em sua última conta de luz ou calcule a média das três últimas contas.</p>
+                    <input type="number" id="NrConsumoMensal" class="form-control" style="background-color: #d0d8e8; border: none;" asp-for="NrConsumoMensal" required>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-primary px-5 py-3" style="font-size: 1.2rem;">Calcular</button>
+                </div>
+            </form>
+        </div>
+    }    
+</div>

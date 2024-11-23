@@ -1,0 +1,99 @@
+﻿@model EcoEnergy.ViewModels.ProceduresViewModel
+
+@{
+    ViewData["Title"] = "Endereço";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 800px;">
+    <h1 class="text-center display-5 fw-bold mb-4" style="color: #2e2e2e;">Inserir Novo Endereço</h1>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success text-center" role="alert">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <form method="post" asp-action="EnderecoView" asp-controller="Procedures">
+        <div class="mb-4">
+            <label asp-for="DsCep" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">CEP</label>
+            <input asp-for="DsCep" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite o CEP" required />
+            <span asp-validation-for="DsCep" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DsLogradouro" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Logradouro</label>
+            <input asp-for="DsLogradouro" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite o logradouro" required />
+            <span asp-validation-for="DsLogradouro" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="NrLogradouro" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Número</label>
+            <input asp-for="NrLogradouro" type="number" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite o número do logradouro" required />
+            <span asp-validation-for="NrLogradouro" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DsBairro" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Bairro</label>
+            <input asp-for="DsBairro" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite o bairro" required />
+            <span asp-validation-for="DsBairro" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DsCidade" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Cidade</label>
+            <input asp-for="DsCidade" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite a cidade" required />
+            <span asp-validation-for="DsCidade" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DsEstado" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Estado</label>
+            <input asp-for="DsEstado" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite o estado" required />
+            <span asp-validation-for="DsEstado" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DsPais" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">País</label>
+            <input asp-for="DsPais" class="form-control" style="background-color: #d0d8e8;" placeholder="Digite o país" required />
+            <span asp-validation-for="DsPais" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="IdUsuario" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Usuário Associado (Opcional)</label>
+            <select asp-for="IdUsuario" asp-items="Model.Usuarios" class="form-control" style="background-color: #d0d8e8;">
+                <option value="">Selecione um usuário...</option>
+            </select>
+            <span asp-validation-for="IdUsuario" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="IdEmpresa" class="form-label" style="color: #2e2e2e; font-size: 1.2rem;">Empresa Associada (Opcional)</label>
+            <select asp-for="IdEmpresa" asp-items="Model.Empresas" class="form-control" style="background-color: #d0d8e8;">
+                <option value="">Selecione uma empresa...</option>
+            </select>
+            <span asp-validation-for="IdEmpresa" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn px-5 py-2" style="background-color: #2e2e2e; color: white; font-size: 1.2rem;">Salvar</button>
+        </div>
+    </form>
+
+    <div class="text-center mt-3">
+        <a href="@Url.Action("MenuProcedures", "Procedures")" class="btn px-5 py-2" style="background-color: #e6e8d0; color: black; font-size: 1.2rem;">Voltar</a>
+    </div>
+
+    <div class="text-center mt-3">
+        <a href="@Url.Action("ListarEnderecos", "Procedures")" class="btn px-5 py-2" style="background-color: #d0d8e8; color: black; font-size: 1.2rem;">Ver todos os Endereços</a>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

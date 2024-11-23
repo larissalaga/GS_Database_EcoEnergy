@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "MenuProcedures";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5 text-center" style="max-width: 800px;">
+    <div class="d-flex align-items-center justify-content-center mb-3">
+        <img src="/images/icon-ecoenergy-removebg-preview.svg" alt="Imagem representativa" style="height: 60px; margin-right: 15px;">
+        <h1 class="display-5 fw-bold mb-3" style="color: #2e2e2e; font-size: 2.5rem;">Gestão de dados</h1>
+    </div>
+    <p class="lead mb-5" style="color: #2e2e2e;">Selecione a tabela em que deseja gerir os dados.</p>
+
+    <div class="d-flex flex-column align-items-center gap-4">
+        <button type="button" class="btn d-flex justify-content-center align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none; font-size: 1.5rem; font-weight: bold;" onclick="location.href='/Procedures/EmpresaView'">Empresa</button>
+        <button type="button" class="btn d-flex justify-content-center align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none; font-size: 1.5rem; font-weight: bold;" onclick="location.href='/Procedures/UsuarioView'">Usuário</button>
+        <button type="button" class="btn d-flex justify-content-center align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none; font-size: 1.5rem; font-weight: bold;" onclick="location.href='/Procedures/EnderecoView'">Endereço</button>
+        <button type="button" class="btn d-flex justify-content-center align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none; font-size: 1.5rem; font-weight: bold;" onclick="location.href='/Procedures/OrcamentoView'">Orçamento</button>
+        <button type="button" class="btn d-flex justify-content-center align-items-center p-3" style="background-color: #d0d8e8; color: black; width: 300px; border: none; font-size: 1.5rem; font-weight: bold;" onclick="location.href='/Procedures/SimulacaoView'">Simulação</button>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+﻿@model List<EcoEnergy.Models.Orcamento>
+
+@{
+    ViewData["Title"] = "Listar Orçamentos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 90%;">
+    <h1 class="text-center display-5 fw-bold mb-4" style="color: #2e2e2e;">Orçamentos Cadastrados</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <table class="table table-hover table-bordered" style="background-color: #f9f9f9;">
+        <thead class="table-dark">
+            <tr style="font-size: 1.2rem;">
+                <th>ID</th>
+                <th>Valor Proposto (R$)</th>
+                <th>Prazo</th>
+                <th>Data do Orçamento</th>
+                <th>Serviços</th>
+                <th>Simulação</th>
+                <th>Usuário</th>
+                <th>Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var orcamento in Model)
+            {
+                <tr class="table-light">
+                    <td>@orcamento.IdOrcamento</td>
+                    <td>@orcamento.NrValorProposto.ToString("N2")</td>
+                    <td>@orcamento.DsPrazo</td>
+                    <td>@orcamento.DtOrcamento.ToShortDateString()</td>
+                    <td>@orcamento.DsServicos</td>
+                    <td>@(orcamento.Simulacao != null ? orcamento.Simulacao.IdSimulacao.ToString() : "N/A")</td>
+                    <td>@(orcamento.Simulacao?.Usuario != null ? orcamento.Simulacao.Usuario.NmUsuario : "N/A")</td>
+                    <td>@(orcamento.Empresa != null ? orcamento.Empresa.NmEmpresa : "N/A")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("OrcamentoView", "Procedures")" class="btn px-5 py-2" style="background-color: #2e2e2e; color: white; font-size: 1.2rem;">Voltar</a>
+    </div>
+</div>
